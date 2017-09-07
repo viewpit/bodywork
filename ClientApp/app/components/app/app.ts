@@ -1,6 +1,10 @@
 import { Aurelia, PLATFORM } from 'aurelia-framework';
 import { Router, RouterConfiguration } from 'aurelia-router';
 
+//require('jquery/dist/jquery');
+//require('popper.js/dist/umd/popper');
+//require('bootstrap/dist/js/bootstrap');
+
 //require('bootstrap');
 
 export class App {

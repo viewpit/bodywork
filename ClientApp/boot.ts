@@ -1,9 +1,8 @@
 import 'isomorphic-fetch';
 import { Aurelia, PLATFORM } from 'aurelia-framework';
 import { HttpClient } from 'aurelia-fetch-client';
-//import { jQuery} from 'jquery';
-//import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap';
+import 'bootstrap/scss/bootstrap.scss';
+
 declare const IS_DEV_BUILD: boolean; // The value is supplied by Webpack during the build
 
 export function configure(aurelia: Aurelia) {
