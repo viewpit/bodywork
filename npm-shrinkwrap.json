@@ -261,6 +261,17 @@
         "aurelia-task-queue": "1.2.0"
       }
     },
+    "aurelia-bootstrap": {
+      "version": "0.1.20",
+      "resolved": "https://registry.npmjs.org/aurelia-bootstrap/-/aurelia-bootstrap-0.1.20.tgz",
+      "integrity": "sha512-lb8o2hQsEi3LXOKJisn9ee46I/Lxs9LDYGrzGNJVSUoCCoRvZVeOYCAA7pyE4VjHYRWh4EEr3GnOWb42v2l6Cw==",
+      "requires": {
+        "aurelia-pal": "1.4.0",
+        "aurelia-templating-resources": "1.4.0",
+        "tether": "1.4.0",
+        "velocity-animate": "1.5.0"
+      }
+    },
     "aurelia-bootstrapper": {
       "version": "2.1.1",
       "resolved": "https://registry.npmjs.org/aurelia-bootstrapper/-/aurelia-bootstrapper-2.1.1.tgz",
@@ -6302,6 +6313,11 @@
       "resolved": "https://registry.npmjs.org/tcomb/-/tcomb-2.7.0.tgz",
       "integrity": "sha1-ENYpWAQWaaXVNWe5pO6M3iKxwrA="
     },
+    "tether": {
+      "version": "1.4.0",
+      "resolved": "https://registry.npmjs.org/tether/-/tether-1.4.0.tgz",
+      "integrity": "sha1-D5+hcfdb9YSF2BSelHmdeudNHBo="
+    },
     "through": {
       "version": "2.3.8",
       "resolved": "https://registry.npmjs.org/through/-/through-2.3.8.tgz",
@@ -6536,6 +6552,11 @@
         "spdx-correct": "1.0.2",
         "spdx-expression-parse": "1.0.4"
       }
+    },
+    "velocity-animate": {
+      "version": "1.5.0",
+      "resolved": "https://registry.npmjs.org/velocity-animate/-/velocity-animate-1.5.0.tgz",
+      "integrity": "sha1-/Idx2N/hE2/wKnB+EPuwlXxLAw8="
     },
     "vendors": {
       "version": "1.0.1",
