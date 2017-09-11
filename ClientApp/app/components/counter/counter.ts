@@ -5,6 +5,9 @@ export class Counter {
     public position = 'top';
     public trigger = 'mouseover';
 
+    public color = 'blue';
+    public size = '';
+
     public toggled(open) {
         if (open) {
             console.log('opened');

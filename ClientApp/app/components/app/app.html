@@ -1,16 +1,12 @@
 <template>
     <require from="../navmenu/navmenu.html"></require>
+    <require from="materialize-css/dist/css/materialize.css"></require>
     <require from="./app.scss"></require>
 
     <nav as-element="navmenu" router.bind="router" collapsed.one-time="true" class="navbar navbar-expand-sm navbar-dark bg-dark"></nav>
-
-    <div class="row">
-        <div class="container-fluid">
-
-            <router-view></router-view>
-        </div>
+    <div class="container-fluid">
+        <router-view></router-view>
     </div>
-
     <footer class="footer">
         <div class="container-fluid">
             <div class="text-center text-muted">&copy; Viewpit 2017</div>
