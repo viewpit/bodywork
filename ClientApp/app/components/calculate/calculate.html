@@ -1,24 +1,10 @@
 <template>
-    
-
-    <a md-sidenav-collapse="ref.bind: sideNav;" md-button md-waves>Toggle SideNav</a>
-    <md-sidenav view-model.ref="sideNav">
-        <ul>
-            <li md-waves><a href="#">About</a></li>
-            <li md-waves><a href="#">Installation</a></li>
-            <li md-waves><a href="#">Project Status</a></li>
-            <li md-waves><a href="#">Help/Docs</a></li>
-        </ul>
-    </md-sidenav>
-    
-
     <div class="card">
         <h4 class="card-header">Counter</h4>
         <div class="card-body">
             <h4 class="card-title">Special title treatment</h4>
             <p class="card-text">This is a simple example of an Aurelia component</p>
-            <p class="card-text2">Current count: <strong>${currentCount}</strong>
-            </p>
+            <p class="card-text2">Current count: <strong>${currentCount}</strong></p>
             <button click.delegate="incrementCounter()" class="btn btn-primary">Increment</button>
         </div>
     </div>
@@ -68,7 +54,7 @@
                 Basic Popover
             </button>
 
-            <br/> <br/>
+            <br /> <br />
 
             <button class="btn btn-primary" aubs-popover="custom-popover.bind: customPopover;
                                                         position.bind: position;
@@ -93,13 +79,13 @@
 
         </div>
     </div>
-
-
-
-    <br/>
-    <hr/>
-    <br/>
-
+    
+    
+    
+    <br />
+    <hr />
+    <br />
+    
     <div>
         <md-progress md-type="circular" md-pixel-size.bind="pixelSize" md-size.bind="size" md-color.bind="color"></md-progress>
     </div>
@@ -121,34 +107,27 @@
     <div>
         <md-input md-label="custom size in pixels" md-value.bind="pixelSize"></md-input>
     </div>
-
-
-
-    <br/>
-    <hr/>
-    <br/>
-
+    
+    
+    
+    <br />
+    <hr />
+    <br />
+    
     <div>
-        <md-input md-label="put some text here" md-value.bind="textValue" md-disabled.bind="disabledValue"></md-input><br/>
-        You entered: ${textValue}<br/>
+        <md-input md-label="put some text here" md-value.bind="textValue" md-disabled.bind="disabledValue"></md-input><br />
+        You entered: ${textValue}<br />
         <button md-button="flat: true;" md-waves class="accent-text" click.delegate="setText()">set text to something</button>
         <button md-button="flat: true;" md-waves class="accent-text" click.delegate="setDisabled()">Toggle Input Disabling</button>
-
-        <md-input md-label="readonly - bound to the field above" md-value.bind="textValue" md-readonly.bind="true"></md-input><br/>
-
+	  
+        <md-input md-label="readonly - bound to the field above" md-value.bind="textValue" md-readonly.bind="true"></md-input><br />
+        
 
     </div>
-
+    
     <div>
         <md-input md-type="email" md-label="email text field" md-validate="true" md-validate-error="invalid email" md-value.bind="email"></md-input>
     </div>
-
-
-
-
-
-    <hr/>
-
 
 
 </template>

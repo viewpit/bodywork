@@ -1,4 +1,4 @@
-export class Counter {
+export class Calculate {
     public currentCount = 0;
     public collapsed = true;
 

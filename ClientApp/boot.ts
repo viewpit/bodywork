@@ -3,7 +3,7 @@ import { Aurelia, PLATFORM } from 'aurelia-framework';
 import { HttpClient } from 'aurelia-fetch-client';
 import 'bootstrap/scss/bootstrap.scss';
 //import { Config } from "aurelia-bootstrapper";
-import * as BootstrapConfig from 'aurelia-bootstrap';
+//import * as BootstrapConfig from 'aurelia-bootstrap';
 //import 'bootstrap'
 //import BootstrapConfig from 'aurelia-bootstrap';
 
@@ -56,10 +56,10 @@ export async function configure(aurelia: Aurelia) {
         config.withBaseUrl(baseUrl);
     });
 
-    aurelia.use.plugin(PLATFORM.moduleName('aurelia-bootstrap'),
-        (config: BootstrapConfig) => {
-            config.options.version = 4;
-        });//.feature('resources');
+    //aurelia.use.plugin(PLATFORM.moduleName('aurelia-bootstrap'),
+    //    (config: BootstrapConfig) => {
+    //        config.options.version = 4;
+    //    });//.feature('resources');
 
     // Install and configure the plugin
     aurelia.use.plugin(PLATFORM.moduleName('aurelia-materialize-bridge'), b => b.useAll());

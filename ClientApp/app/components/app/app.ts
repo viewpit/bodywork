@@ -30,6 +30,13 @@ export class App {
             nav: true,
             title: 'Counter'
         }, {
+            route: 'calculate',
+            name: 'calculate',
+            settings: { icon: 'education' },
+            moduleId: PLATFORM.moduleName('../calculate/calculate'),
+            nav: true,
+            title: 'Workout calculating'
+        }, {
             route: 'fetch-data',
             name: 'fetchdata',
             settings: { icon: 'th-list' },

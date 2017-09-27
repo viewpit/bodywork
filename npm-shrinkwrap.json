@@ -261,17 +261,6 @@
         "aurelia-task-queue": "1.2.0"
       }
     },
-    "aurelia-bootstrap": {
-      "version": "0.1.20",
-      "resolved": "https://registry.npmjs.org/aurelia-bootstrap/-/aurelia-bootstrap-0.1.20.tgz",
-      "integrity": "sha512-lb8o2hQsEi3LXOKJisn9ee46I/Lxs9LDYGrzGNJVSUoCCoRvZVeOYCAA7pyE4VjHYRWh4EEr3GnOWb42v2l6Cw==",
-      "requires": {
-        "aurelia-pal": "1.4.0",
-        "aurelia-templating-resources": "1.4.0",
-        "tether": "1.4.0",
-        "velocity-animate": "1.5.0"
-      }
-    },
     "aurelia-bootstrapper": {
       "version": "2.1.1",
       "resolved": "https://registry.npmjs.org/aurelia-bootstrapper/-/aurelia-bootstrapper-2.1.1.tgz",
