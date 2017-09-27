@@ -1,4 +1,4 @@
-# Workout project (Aurelia, .NET Core 2.0, Webpack 2, TypeScript, Boostrap 4 and Sass)
+# Workout project (Aurelia, .NET Core 2.0, Webpack 2, TypeScript, Boostrap 4, Sass and Aurelia Materialize Components)
 
 This repository contains template for running Aurelia and ASP.NET Core 2.0 Sample Template, with Webpack 2, TypeScript, Bootstrap 4 and Sass.
 
@@ -35,7 +35,7 @@ Node-sass was build for old node.js version:
 
 * If you are using PowerShell on Windows, execute `$Env:ASPNETCORE_ENVIRONMENT = "Development"`
 * If you are using cmd.exe on Windows, execute `setx ASPNETCORE_ENVIRONMENT "Development"`, and then restart your command prompt to make the change take effect.
-* If you’re using Mac/Linux, execute `export ASPNETCORE_ENVIRONMENT=Development`
+* If youâ€™re using Mac/Linux, execute `export ASPNETCORE_ENVIRONMENT=Development`
 
 ### Starting Up The Application
 
