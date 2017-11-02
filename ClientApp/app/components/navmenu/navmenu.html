@@ -1,52 +1,50 @@
 <template bindable="router">
     <require from="./navmenu.scss"></require>
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Bodywork</a>
+    <nav class="navbar navbar-expand-xs navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Bodywork</a>
 
-    <button class="navbar-toggler" type="button" md-sidenav-collapse="ref.bind: sideNavCloseOnClick;">
-        <!--md-waves md-button-->
-        <span class="navbar-toggler-icon"></span>
-    </button>
+        <button class="navbar-toggler" type="button" md-sidenav-collapse="ref.bind: sideNavCloseOnClick;">
+            <!--md-waves md-button-->
+            <span class="navbar-toggler-icon"></span>
+        </button>
     </nav>
-    
+
     <!--<div class="container">-->
-        <md-sidenav view-model.ref="sideNavCloseOnClick" md-edge="right" md-close-on-click="true">
-            <!-- md-width="350" -->
-            <ul class="">
+    <md-sidenav view-model.ref="sideNavCloseOnClick" md-edge="right" md-close-on-click="true">
+        <!-- md-width="350" -->
+        <ul class="">
 
-                <!--<li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>-->
+            <!--<li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>-->
 
-                <li md-waves repeat.for="row of router.navigation" class="nav-item ${ row.isActive ? 'link-active' : '' }">
-                    <a class="nav-link" href.bind="row.href">
-                        <span class="glyphicon glyphicon-${ row.settings.icon }"></span> ${ row.title }
-                    </a>
-                </li>
+            <li md-waves repeat.for="row of router.navigation" class="nav-item ${ row.isActive ? 'link-active' : '' }">
+                <a class="nav-link" href.bind="row.href">
+                    <span class="glyphicon glyphicon-${ row.settings.icon }"></span> ${ row.title }
+                </a>
+            </li>
 
-                <!--<li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown03">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>-->
-            </ul>
-            <!--<form class="form-inline my-2 my-md-0">
-                <input class="form-control" type="text" placeholder="Search">
-            </form>-->
-        </md-sidenav>
+            <!--<li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown03">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>-->
+        </ul>
+        <!--<form class="form-inline my-2 my-md-0">
+            <input class="form-control" type="text" placeholder="Search">
+        </form>-->
+    </md-sidenav>
     <!--</div>-->
-
-
     <!--<div class="main-nav">
         <div class="navbar navbar-inverse">
             <div class="navbar-header">

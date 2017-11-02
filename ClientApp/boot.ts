@@ -40,11 +40,6 @@ function waitForMaterialize() {
 
 export async function configure(aurelia: Aurelia) {
 
-    // https://github.com/aurelia-ui-toolkits/aurelia-materialize-bridge/issues/337
-    // without this we have "Uncaught TypeError: Materialize.updateTextFields is not a function".
-    // Remove this when the issue is closed.
-    await waitForMaterialize();
-
     aurelia.use.standardConfiguration();
 
     if (IS_DEV_BUILD) {
@@ -63,6 +58,11 @@ export async function configure(aurelia: Aurelia) {
 
     // Install and configure the plugin
     aurelia.use.plugin(PLATFORM.moduleName('aurelia-materialize-bridge'), b => b.useAll());
+
+    // https://github.com/aurelia-ui-toolkits/aurelia-materialize-bridge/issues/337
+    // without this we have "Uncaught TypeError: Materialize.updateTextFields is not a function".
+    // Remove this when the issue is closed.
+    await waitForMaterialize();
 
     aurelia.start().then(() => aurelia.setRoot(PLATFORM.moduleName('app/components/app/app')));
 }

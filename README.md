@@ -1,4 +1,4 @@
-# Workout project (Aurelia, .NET Core 2.0, Webpack 2, TypeScript, Boostrap 4, Sass and Aurelia Materialize Components)
+# Workout project (Aurelia, .NET Core 2.0, Webpack 2, TypeScript, Boostrap 4, Sass and Aurelia Materialize)
 
 This repository contains template for running Aurelia and ASP.NET Core 2.0 Sample Template, with Webpack 2, TypeScript, Bootstrap 4 and Sass.
 
@@ -14,7 +14,7 @@ This prodject was created using the Microsoft.AspNetCore.SpaTemplates for Aureli
 The following steps must be performed once on the target machine:
 
 * Install the .NET SDK 2.0 from https://www.microsoft.com/net/download/core
-* Install Node.js from https://nodejs.org (version >= 6.11.3)
+* Install Node.js from https://nodejs.org (version >= 8.9.0)
 
 ## Running This Project Using Command Line Tools
 

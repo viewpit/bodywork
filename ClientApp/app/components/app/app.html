@@ -1,9 +1,10 @@
 <template>
     <require from="../navmenu/navmenu.html"></require>
-    <require from="materialize-css/dist/css/materialize.css"></require>
+    <require from="materialize-css/dist/css/materialize.min.css"></require>
     <require from="./app.scss"></require>
     
     <navmenu router.bind="router" containerless></navmenu>
+
     <div class="container-fluid">
         <router-view></router-view>
     </div>

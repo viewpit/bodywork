@@ -19,18 +19,18 @@ module.exports = ({ prod } = {}) => {
         },
         entry: {
             vendor: [
-                'aurelia-event-aggregator',
-                'aurelia-fetch-client',
-                'aurelia-framework',
-                'aurelia-history-browser',
-                'aurelia-logging-console',
-                'aurelia-pal-browser',
-                'aurelia-polyfills',
-                'aurelia-route-recognizer',
-                'aurelia-router',
-                'aurelia-templating-binding',
-                'aurelia-templating-resources',
-                'aurelia-templating-router',
+                //'aurelia-event-aggregator',
+                //'aurelia-fetch-client',
+                //'aurelia-framework',
+                //'aurelia-history-browser',
+                //'aurelia-logging-console',
+                //'aurelia-pal-browser',
+                //'aurelia-polyfills',
+                //'aurelia-route-recognizer',
+                //'aurelia-router',
+                //'aurelia-templating-binding',
+                //'aurelia-templating-resources',
+                //'aurelia-templating-router',
                 'bootstrap',
                 'bootstrap/dist/css/bootstrap.css',
                 'jquery'
@@ -49,8 +49,12 @@ module.exports = ({ prod } = {}) => {
                 path: path.join(__dirname, 'wwwroot', 'dist', '[name]-manifest.json'),
                 name: '[name]_[hash]'
             })
-        ].concat(isDevBuild ? [] : [
-            new webpack.optimize.UglifyJsPlugin({ compress: { warnings: false } })
+        ].concat(isDevBuild ? [] : [ new webpack.optimize.UglifyJsPlugin(
+            {
+              compress: { warnings: false },
+              output: { comments: false, beautify: false },
+              ecma: 8
+            })
         ])
     }]
 };

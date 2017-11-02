@@ -1,5 +1,5 @@
 <template>
-    
+
 
     <a md-sidenav-collapse="ref.bind: sideNav;" md-button md-waves>Toggle SideNav</a>
     <md-sidenav view-model.ref="sideNav">
@@ -10,19 +10,21 @@
             <li md-waves><a href="#">Help/Docs</a></li>
         </ul>
     </md-sidenav>
-    
+
 
     <div class="card">
         <h4 class="card-header">Counter</h4>
         <div class="card-body">
             <h4 class="card-title">Special title treatment</h4>
             <p class="card-text">This is a simple example of an Aurelia component</p>
-            <p class="card-text2">Current count: <strong>${currentCount}</strong>
+            <p class="card-text2">
+                Current count: <strong>${currentCount}</strong>
             </p>
             <button click.delegate="incrementCounter()" class="btn btn-primary">Increment</button>
         </div>
     </div>
 
+    <!--
     <a class="btn btn-default" aubs-btn-checkbox="state.bind: collapsed">Toggle Collapse</a>
 
     <hr>
@@ -61,19 +63,19 @@
         <div class="col-md-6">
 
             <button class="btn btn-default" aubs-popover="title:My Title <i class='fa fa-heart'></i>;
-                                                        body:<a href='#/popover'>Awesome</a> <strong>Content</strong>;
-                                                        position.bind: position;
-                                                        trigger.bind: trigger;
-                                                        on-toggle.call:toggled(open)">
+                                                            body:<a href='#/popover'>Awesome</a> <strong>Content</strong>;
+                                                            position.bind: position;
+                                                            trigger.bind: trigger;
+                                                            on-toggle.call:toggled(open)">
                 Basic Popover
             </button>
 
             <br/> <br/>
 
             <button class="btn btn-primary" aubs-popover="custom-popover.bind: customPopover;
-                                                        position.bind: position;
-                                                        trigger.bind: trigger;
-                                                        is-open.bind:isOpen;">
+                                                            position.bind: position;
+                                                            trigger.bind: trigger;
+                                                            is-open.bind:isOpen;">
                 Custom Popover
             </button>
 
@@ -100,6 +102,8 @@
     <hr/>
     <br/>
 
+    -->
+
     <div>
         <md-progress md-type="circular" md-pixel-size.bind="pixelSize" md-size.bind="size" md-color.bind="color"></md-progress>
     </div>
@@ -124,17 +128,17 @@
 
 
 
-    <br/>
-    <hr/>
-    <br/>
+    <br />
+    <hr />
+    <br />
 
     <div>
-        <md-input md-label="put some text here" md-value.bind="textValue" md-disabled.bind="disabledValue"></md-input><br/>
-        You entered: ${textValue}<br/>
+        <md-input md-label="put some text here" md-value.bind="textValue" md-disabled.bind="disabledValue"></md-input><br />
+        You entered: ${textValue}<br />
         <button md-button="flat: true;" md-waves class="accent-text" click.delegate="setText()">set text to something</button>
         <button md-button="flat: true;" md-waves class="accent-text" click.delegate="setDisabled()">Toggle Input Disabling</button>
 
-        <md-input md-label="readonly - bound to the field above" md-value.bind="textValue" md-readonly.bind="true"></md-input><br/>
+        <md-input md-label="readonly - bound to the field above" md-value.bind="textValue" md-readonly.bind="true"></md-input><br />
 
 
     </div>
@@ -147,7 +151,7 @@
 
 
 
-    <hr/>
+    <hr />
 
 
 
