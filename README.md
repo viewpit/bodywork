@@ -1,4 +1,4 @@
-# Workout project (Aurelia, .NET Core 2.0, Webpack 2, TypeScript, Boostrap 4, Sass and Aurelia Materialize)
+# Workout project (Aurelia, .NET Core 2.0.2, Webpack 3, TypeScript, Boostrap 4, Sass and Aurelia Materialize)
 
 This repository contains template for running Aurelia and ASP.NET Core 2.0 Sample Template, with Webpack 3, TypeScript, Bootstrap 4, Sass and Materialize design.
 
