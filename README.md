@@ -1,4 +1,4 @@
-# Workout project (Aurelia, .NET Core 2.0, Webpack 2, TypeScript, Boostrap 4, Sass and Aurelia Materialize)
+# Workout project (Aurelia, .NET Core 2.0.2, Webpack 3, TypeScript, Boostrap 4, Sass and Aurelia Materialize)
 
 This repository contains template for running Aurelia and ASP.NET Core 2.0 Sample Template, with Webpack 3, TypeScript, Bootstrap 4, Sass and Materialize design.
 
@@ -17,7 +17,7 @@ First, there are a set of prerequisites you will need whether or not you are usi
 This prodject was created using the Microsoft.AspNetCore.SpaTemplates for Aurelia, width .NET Core 2.0.2
 * Use the .NET CLI to install the ASP.NET Spa Templates. 
   * `dotnet new --install "Microsoft.AspNetCore.SpaTemplates::*"`
-  * `dotnet new aurelia -f netcoreapp2.0` - Generate an ASP.NET project configured with Aurelia using the .NET CLI.
+  * `dotnet new aurelia` - Generate an ASP.NET project configured with Aurelia using the .NET CLI.
 
 
 ## Running This Project Using Command Line Tools
