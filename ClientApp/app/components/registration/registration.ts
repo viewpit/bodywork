@@ -1,9 +1,9 @@
 import { inject, NewInstance } from 'aurelia-framework';
-import { ValidationController, ValidationRules, ControllerValidateResult } from 'aurelia-validation';
+import { ValidationController, ValidationRules } from 'aurelia-validation';
 import { MaterializeFormValidationRenderer } from 'aurelia-materialize-bridge';
 
 @inject(NewInstance.of(ValidationController))
-export class Calculate {
+export class registration {
     message = '';
     firstName = '';
     lastName = 'Doe';

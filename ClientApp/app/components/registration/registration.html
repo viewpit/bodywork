@@ -2,18 +2,11 @@
     
     <require from="./blurOnEnter"></require>
     <div>
-        <h3>Bergning av trenings program</h3>
-        <p>Programmeter bygd opp av perioder med 6 uker med trening og 1
-            uke hvile (strategisk nedtrening), deretter begynner du på
-            en ny runde med 6 uker trening og 1 uke hvile</p>
-        
-        <br/>
-        <div class="col-4">Skriv inn antall kg som maks er løftet 10 ganger (10 reps)</div>
-
         <md-input
             md-blur-on-enter="true"
             md-label="First Name"
-            md-value.bind="firstName & validate:rules">
+            md-value.bind="firstName & validate:rules"
+        >
         </md-input>
 
         <md-input

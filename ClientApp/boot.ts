@@ -57,7 +57,9 @@ export async function configure(aurelia: Aurelia) {
     //    });//.feature('resources');
 
     // Install and configure the plugin
-    aurelia.use.plugin(PLATFORM.moduleName('aurelia-materialize-bridge'), b => b.useAll());
+    aurelia.use
+        .plugin(PLATFORM.moduleName('aurelia-materialize-bridge'), b => b.useAll())
+        .plugin(PLATFORM.moduleName('aurelia-validation'));
 
     // https://github.com/aurelia-ui-toolkits/aurelia-materialize-bridge/issues/337
     // without this we have "Uncaught TypeError: Materialize.updateTextFields is not a function".
