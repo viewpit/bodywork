@@ -23,7 +23,7 @@ module.exports = (env) => {
     module.isDebug = (env && env.prod) ? false : true;
 
     return [{
-       // stats: { modules: false },
+        stats: { modules: false },
         entry: { 'app': 'aurelia-bootstrapper' },
         //resolve: {
         //    extensions: ['.ts', '.js'],
@@ -123,23 +123,23 @@ module.exports = (env) => {
             //  Util: "exports-loader?Util!bootstrap/js/dist/util"
             //}),
             new AureliaPlugin({ aureliaApp: 'boot' })
-        ]
-            .concat(
-            [
-                (module.isDebug === true) ? (
-                   // new BundleAnalyzerPlugin(),
-                    new webpack.SourceMapDevToolPlugin({
-                        filename: '[file].map', // Remove this line if you prefer inline source maps
-                        moduleFilenameTemplate: path.relative(bundleOutputDir, '[resourcePath]')  // Point sourcemap entries to the original file locations on disk
-                    })
-                ) : (
-                     //   new BundleAnalyzerPlugin(),
-                        new webpack.optimize.UglifyJsPlugin({
-                            compress: { warnings: false },
-                            output: { comments: false, beautify: false },
-                            ecma: 8
-                        })
-                    )
-            ])
-    }];
+      ]
+      .concat(
+        [
+          (module.isDebug === true) ? (
+            // new BundleAnalyzerPlugin(),
+            new webpack.SourceMapDevToolPlugin({
+              filename: '[file].map', // Remove this line if you prefer inline source maps
+              moduleFilenameTemplate: path.relative(bundleOutputDir, '[resourcePath]')  // Point sourcemap entries to the original file locations on disk
+            })
+          ) : (
+            //   new BundleAnalyzerPlugin(),
+            new webpack.optimize.UglifyJsPlugin({
+              compress: { warnings: false },
+              output: { comments: false, beautify: false },
+              ecma: 8
+            })
+          )
+        ])
+  }];
 }

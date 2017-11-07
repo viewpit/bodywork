@@ -1,7 +1,9 @@
 import 'isomorphic-fetch';
 import { Aurelia, PLATFORM } from 'aurelia-framework';
 import { HttpClient } from 'aurelia-fetch-client';
-import 'bootstrap/scss/bootstrap.scss';
+
+//import 'bootstrap/scss/bootstrap.scss';
+
 //import { Config } from "aurelia-bootstrapper";
 //import * as BootstrapConfig from 'aurelia-bootstrap';
 //import 'bootstrap'
