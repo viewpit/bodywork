@@ -1,6 +1,7 @@
-# Workout project (Aurelia, .NET Core 2.0.2, Webpack 3, TypeScript, Boostrap 4, Sass and Aurelia Materialize)
+# Bodywork project
 
-This repository contains template for running Aurelia and ASP.NET Core 2.0 Sample Template, with Webpack 3, TypeScript, Bootstrap 4, Sass and Materialize design.
+This repository contains template for running Aurelia and ASP.NET Core 2.0.
+With Webpack 3, Babel, Bootstrap 4, Sass and (*Materialize design).
 
 
 ### Setting Up Your Machine
@@ -9,15 +10,7 @@ First, there are a set of prerequisites you will need whether or not you are usi
 
 * Install the .NET SDK 2.0 from https://www.microsoft.com/net/download/core
 * [NodeJS](http://nodejs.org/) >=8.9.0 This provides the platform on which the build tooling runs. This may be downloaded and installed from the NodeJS website.
-* NPM >=5.1.0 This is installed with NodeJS, but if you install a older version of NodeJS, you may have to update this. How to upgrade npm https://www.npmjs.com/package/npm-windows-upgrade
-
-
-## How This Project Was Created
-
-This prodject was created using the Microsoft.AspNetCore.SpaTemplates for Aurelia, width .NET Core 2.0.2
-* Use the .NET CLI to install the ASP.NET Spa Templates. 
-  * `dotnet new --install "Microsoft.AspNetCore.SpaTemplates::*"`
-  * `dotnet new aurelia` - Generate an ASP.NET project configured with Aurelia using the .NET CLI.
+* NPM >=5.5.1 This is installed with NodeJS, but if you install a older version of NodeJS, you may have to update this. How to upgrade npm https://www.npmjs.com/package/npm-windows-upgrade
 
 
 ## Running This Project Using Command Line Tools
@@ -62,4 +55,4 @@ When your dependencies have finished restoring, press Ctrl+F5 to launch the appl
 ### Third party documentation
 
 * Bootstrap 4.0.0-beta.2 (http://getbootstrap.com/)
-* Aurelia Materialize Bridge 0.31 (https://aurelia-ui-toolkits.github.io/demo-materialize/)
+* (Aurelia Materialize Bridge 0.31 (https://aurelia-ui-toolkits.github.io/demo-materialize/) )

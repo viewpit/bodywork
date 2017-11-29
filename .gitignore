@@ -3,3 +3,17 @@
 ################################################################################
 
 /Bodywork.Business/bin
+/Bodywork.Business/obj
+/Bodywork.Business.Interfaces/bin
+/Bodywork.Business.Interfaces/obj
+/Bodywork.Entities/bin
+/Bodywork.Entities/obj
+/Bodywork.Repository/bin
+/Bodywork.Repository/obj
+/Bodywork.Repository.Interfaces/bin
+/Bodywork.Repository.Interfaces/obj
+/Bodywork.SQL/bin
+/Bodywork.SQL/obj
+/src/appsettings.production.json
+/src/appsettings.development.json
+/.vs

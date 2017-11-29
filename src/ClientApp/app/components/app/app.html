@@ -1,0 +1,25 @@
+<template>
+  <require from="../navmenu/navmenu.html"></require>
+  <require from="./app.scss"></require>
+  <require from="bootstrap/scss/bootstrap.scss"></require>
+  
+  
+  <require from="../../../sass/now-ui-kit.scss"></require>
+  <require from="../../../sass/demo.scss"></require>
+
+  <!--<require from="materialize-css/dist/css/materialize.css"></require>-->
+
+  <navmenu router.bind="router" containerless></navmenu>
+
+  <!--<div class="container-fluid">-->
+    <router-view></router-view>
+  <!--</div>-->
+
+
+  <!--<footer class="footer">
+    <div class="container-fluid">
+      <div class="text-center text-muted">&copy; Viewpit 2017</div>
+    </div>
+  </footer>-->
+
+</template>
