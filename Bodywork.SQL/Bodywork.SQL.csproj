@@ -1,30 +1,32 @@
-﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <PlatformTarget>x64</PlatformTarget>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <PlatformTarget>x64</PlatformTarget>
-  </PropertyGroup>
-  <ItemGroup>
-    <Compile Include="**\*.cs" />
-    <EmbeddedResource Include="**\*.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="obj\**" />
-    <EmbeddedResource Remove="obj\**" />
-    <None Remove="obj\**" />
-  </ItemGroup>
-  
-  <ItemGroup>
-    <None Include="Scripts\SQL Script-000001.sql" />
-    <None Include="Scripts\SQL Script-000002.sql" />
-    <None Include="Scripts\SQL Script-000003.sql" />
-    <None Include="Scripts\SQL Script-000004.sql" />
-    <None Include="Scripts\SQL Script-000005.sql" />
-    <None Include="Scripts\SQL Script-000006.sql" />
-    <None Include="Scripts\SQL Script-000007.sql" />
-  </ItemGroup>
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.0</TargetFramework>
+    </PropertyGroup>
+    
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <PlatformTarget>x64</PlatformTarget>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+        <PlatformTarget>x64</PlatformTarget>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="**\*.cs" />
+        <EmbeddedResource Include="**\*.resx" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Remove="obj\**" />
+        <EmbeddedResource Remove="obj\**" />
+        <None Remove="obj\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="Scripts\SQL Script-000001.sql" />
+        <None Include="Scripts\SQL Script-000002.sql" />
+        <None Include="Scripts\SQL Script-000003.sql" />
+        <None Include="Scripts\SQL Script-000004.sql" />
+        <None Include="Scripts\SQL Script-000005.sql" />
+        <None Include="Scripts\SQL Script-000006.sql" />
+        <None Include="Scripts\SQL Script-000007.sql" />
+    </ItemGroup>
 </Project>

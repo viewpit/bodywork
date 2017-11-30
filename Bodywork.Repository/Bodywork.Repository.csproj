@@ -1,23 +1,26 @@
-﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
-  <PropertyGroup>
-      <TargetFramework>netstandard2.0</TargetFramework>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <PlatformTarget>x64</PlatformTarget>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <PlatformTarget>x64</PlatformTarget>
-  </PropertyGroup>
-  
-  <ItemGroup>
-    <PackageReference Include="Dapper" Version="1.50.4" />
-    <PackageReference Include="Dapper.FluentMap" Version="1.5.1" />    
-    <PackageReference Include="System.Data.SqlClient" Version="4.4.0" />
-    <PackageReference Include="System.Runtime" Version="4.3.0" />
-    <PackageReference Include="System.ValueTuple" Version="4.3.0" />
-  </ItemGroup>
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.0</TargetFramework>
+    </PropertyGroup>
     
-  <ItemGroup>
-    <ProjectReference Include="..\Bodywork.Repository.Interfaces\Bodywork.Repository.Interfaces.csproj" />
-  </ItemGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <PlatformTarget>x64</PlatformTarget>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+        <PlatformTarget>x64</PlatformTarget>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Dapper" Version="1.50.4" />
+        <PackageReference Include="Dapper.FluentMap" Version="1.6.0" />
+        <PackageReference Include="System.Data.SqlClient" Version="4.4.0" />
+        <PackageReference Include="System.Runtime" Version="4.3.0" />
+        <PackageReference Include="System.ValueTuple" Version="4.4.0" />
+        <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Bodywork.Repository.Interfaces\Bodywork.Repository.Interfaces.csproj" />
+    </ItemGroup>
 </Project>

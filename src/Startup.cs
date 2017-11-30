@@ -1,7 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.ResponseCompression;
@@ -9,7 +6,6 @@ using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-
 using Bodywork.Business.Interfaces;
 using Bodywork.Repository.Interfaces;
 using Bodywork.Business;
@@ -21,15 +17,9 @@ namespace Bodywork
   public class Startup
   {
 
-    public Startup(IConfiguration configuration, IHostingEnvironment env)
-    {
-      var builder = new ConfigurationBuilder()
-        .SetBasePath(env.ContentRootPath)
-        .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-        .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
-        .AddEnvironmentVariables();
-      Configuration = builder.Build();
-      //Configuration = configuration;
+    public Startup(IConfiguration configuration)
+    {      
+      Configuration = configuration;
     }
 
     public IConfiguration Configuration { get; }
@@ -47,6 +37,24 @@ namespace Bodywork
 
       services.Configure<GzipCompressionProviderOptions>(options => options.Level = System.IO.Compression.CompressionLevel.Optimal);
       services.AddResponseCompression();
+
+      services.AddAuthentication()
+        .AddFacebook(options =>
+        {
+          options.AppId = Configuration["Authentication:Facebook:AppId"];
+          options.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
+        });
+
+      //services.AddIdentity<ApplicationUser, IdentityRole>()
+      //  .AddEntityFrameworkStores<ApplicationDbContext>()
+      //  .AddDefaultTokenProviders();
+
+      //services.AddAuthentication().AddFacebook(facebookOptions =>
+      //{
+      //  facebookOptions.AppId = Configuration["Authentication:Facebook:AppId"];
+      //  facebookOptions.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
+      //});
+
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -71,6 +79,8 @@ namespace Bodywork
       }
 
       app.UseStaticFiles();
+
+      app.UseAuthentication();
 
       app.UseMvc(routes =>
       {

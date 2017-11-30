@@ -7,7 +7,7 @@ import 'bootstrap';
 export class App {
      
     configureRouter(config, router) {
-        config.title = 'Test_babel';
+        config.title = 'Bodywork';
 
         config.options.pushState = true;
         

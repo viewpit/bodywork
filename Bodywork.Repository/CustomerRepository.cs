@@ -6,11 +6,18 @@ using Bodywork.Entities;
 using Dapper;
 using static System.Data.CommandType;
 using System.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
+
 
 namespace Bodywork.Repository
 {
     public class CustomerRepository:BaseRepository, IRepository<Customer>
     {
+        public CustomerRepository(IConfigurationRoot configuration) : base(configuration)
+        {
+            
+        }
+
         public void Add(Customer entity)
         {
             try

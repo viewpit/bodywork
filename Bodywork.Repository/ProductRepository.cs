@@ -10,6 +10,7 @@ using static System.Data.CommandType;
 using System.Data.SqlClient;
 using System.Linq;
 using Dapper.FluentMap.Mapping;
+using Microsoft.Extensions.Configuration;
 
 namespace Bodywork.Repository
 {
@@ -30,6 +31,11 @@ namespace Bodywork.Repository
 
     public class ProductRepository : BaseRepository, IRepository<Product>
     {
+        public ProductRepository(IConfigurationRoot configuration) : base(configuration)
+        {
+
+        }
+
         public void Add(Product entity)
         {
             throw new NotImplementedException();

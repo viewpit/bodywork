@@ -7,11 +7,17 @@ using System.Linq;
 using static System.Data.CommandType;
 using Bodywork.Repository.Interfaces;
 using System.Data;
+using Microsoft.Extensions.Configuration;
 
 namespace Bodywork.Repository
 {
     public class UserRepository : BaseRepository, IUserRepository
     {
+        public UserRepository(IConfigurationRoot configuration) : base(configuration)
+        {
+
+        }
+
         public bool AddUser(User user)
         {
             try
