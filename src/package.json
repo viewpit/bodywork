@@ -18,7 +18,7 @@
     "isomorphic-fetch": "^2.2.1",
     "jquery": "^3.2.1",
     "materialize-css": "^0.100.2",
-    "moment": "^2.21.0",
+    "moment": "^2.29.4",
     "popper.js": "^1.12.6",
     "velocity-animate": "^1.5.0"
   },
